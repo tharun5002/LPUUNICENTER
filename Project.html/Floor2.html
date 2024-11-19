@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Services at LPU</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.8;
+            color: #333;
+            background-color: #f0f4f7; 
+            position: relative;
+            height: 100vh;
+        }
+
+        
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: -1;
+        }
+
+        
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        
+        h1 {
+            font-size: 48px;
+            color: #2e3b4e;
+            margin-bottom: 50px;
+            font-weight: 700;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+       
+        .service-section {
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 15px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            padding: 25px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+        }
+
+        .service-section:hover {
+            transform: translateY(-10px); 
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .service-section h2 {
+            font-size: 30px;
+            color: #2e3b4e;
+            margin-bottom: 20px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            position: relative;
+        }
+
+        
+        .service-section h2::after {
+            content: '';
+            position: absolute;
+            width: 60px;
+            height: 2px;
+            background-color: #2e3b4e;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+       
+        img {
+            display: block;
+            margin: 0 auto 20px;
+            max-width: 50%; 
+            height: auto;
+            border-radius: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        
+        p {
+            font-size: 18px;
+            color: #555;
+            text-align: justify;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 36px;
+            }
+
+            .service-section h2 {
+                font-size: 24px;
+            }
+
+            img {
+                width: 85%; 
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="overlay"></div> 
+
+    <div class="container">
+        <h1>Campus Services at LPU</h1>
+
+        
+        <div class="service-section">
+            <h2>Lovely Sweets</h2>
+            <img src="images/lovely sweets.jpeg" alt="Lovely Sweets">
+            <p>Lovely Bake Studio at Lovely Professional University (LPU) is part of LPU's School of Hospitality and is specifically designed to give students hands-on experience in the baking and pastry arts. This studio is a place where students can learn, practice, and experiment with various baking techniques, from traditional cakes and pastries to more advanced baking innovations.</p>
+        </div>
+
+        
+        <div class="service-section">
+            <h2>Himalayan Wellness</h2>
+            <img src="images/himalayan.jpeg" alt="Himalayan Wellness">
+            <p>The Himalayan Wellness Store at Lovely Professional University (LPU) sells a range of health and wellness products with a focus on natural, organic, and wellness-related goods. Inspired by the Himalayan region's herbal traditions, it offers products that promote well-being.</p>
+        </div>
+
+        
+        <div class="service-section">
+            <h2>Nivia Sport Shop</h2>
+            <img src="images/NIVIA.jpeg" alt="Nivia Sport Shop">
+            <p>The Nivia Sport Store at LPU is a retail outlet specializing in Nivia sports products, including equipment, apparel, and accessories. It provides students and faculty with easy access to quality sporting goods on campus.</p>
+        </div>
+
+        
+        <div class="service-section">
+            <h2>Phone World</h2>
+            <img src="images/PHONE WORLD.jpeg" alt="Phone World">
+            <p>The Phone World Store at LPU offers mobile phones, accessories, and gadgets. It’s convenient for students and staff who wish to purchase or service their phones without leaving the campus.</p>
+        </div>
+
+       
+        <div class="service-section">
+            <h2>Samsung</h2>
+            <img src="images/SAMSUNG.jpeg" alt="Samsung Store">
+            <p>The Samsung Store at LPU provides a variety of Samsung products, including smartphones, tablets, wearables, and accessories. This store caters to a wide range of tech needs, from premium devices to budget-friendly options.</p>
+        </div>
+
+        
+        <div class="service-section">
+            <h2>SBI</h2>
+            <img src="images/SBI.jpeg" alt="SBI Bank">
+            <p>The State Bank of India (SBI) Branch at LPU offers a full range of banking services, including personal banking, student loans, and financial products, right on campus for the convenience of students, faculty, and staff.</p>
+        </div>
+
+        
+        <div class="service-section">
+            <h2>ICICI</h2>
+            <img src="images/WhatsApp Image 2024-11-08 at 9.18.21 PM.jpeg" alt="ICICI Bank">
+            <p>ICICI Bank at LPU offers banking services including savings accounts, loans, and credit cards. The branch is convenient for students and staff looking to manage their finances on campus.</p>
+        </div>
+
+        
+        <div class="service-section">
+            <h2>HDFC</h2>
+            <img src="images/HDFC.jpeg" alt="HDFC Bank">
+            <p>The HDFC Bank branch at LPU provides students, faculty, and staff with a range of banking services, including secure banking options, loans, and personal finance management services.</p>
+        </div>
+
+    </div>
+
+</body>
+</html>

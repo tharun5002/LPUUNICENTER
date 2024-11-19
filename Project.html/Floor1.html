@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore LPU's Popular Spots</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+    <style>
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            background: linear-gradient(135deg, #969398, #9ea1a5); /* Gradient background */
+            color: #333;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        
+        .container {
+            width: 85%;
+            margin: 0 auto;
+            padding: 50px 0;
+        }
+
+        
+        img {
+            display: block;
+            margin: 20px auto;
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        img:hover {
+            transform: scale(1.1);
+            box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        
+        p {
+            font-size: 1.1em;
+            margin: 15px 0;
+            text-align: justify;
+            color: #f1f1f1;
+            line-height: 1.8;
+        }
+
+      
+        h1 {
+            text-align: center;
+            color: #fff;
+            font-size: 3em;
+            padding: 20px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 40px;
+            font-family: 'Montserrat', sans-serif;
+            animation: fadeIn 2s ease-out;
+        }
+
+        h2 {
+            font-size: 2em;
+            color: #fff;
+            margin-bottom: 15px;
+            font-family: 'Montserrat', sans-serif;
+            animation: fadeIn 2s ease-out;
+        }
+
+      
+        section {
+            background-color: #fff;
+            margin-bottom: 40px;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        section:hover {
+            transform: translateY(-5px);
+        }
+
+        
+        header {
+            background-color:black ;
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+
+        header h1 {
+            font-size: 3.5em;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        
+        section p {
+            font-size: 1.2em;
+            color: #555;
+        }
+
+        
+        .btn-link {
+            background-color: #ff6347;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 30px;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 20px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .btn-link:hover {
+            background-color: #e84e38;
+            transform: translateY(-3px);
+        }
+
+        
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        
+        @media (max-width: 768px) {
+            .container {
+                width: 90%;
+            }
+
+            header h1 {
+                font-size: 2.5em;
+            }
+
+            section h2 {
+                font-size: 1.8em;
+            }
+
+            p {
+                font-size: 1em;
+            }
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    
+    <header>
+        <h1>Explore LPU's Popular Spots</h1>
+    </header>
+
+    
+    <div class="container">
+        
+        <section>
+            <h2 style="color: black;">Le Broc Grocery Store</h2>
+            <img src="images/happy.jpeg" height="400px" width="400px" alt="Le Broc Grocery Store">
+            <p>Le Broc Grocery Store is a local store near Lovely Professional University (LPU) in Phagwara, Punjab. It's a go-to spot for students looking to grab daily essentials, snacks, and more.</p>
+            
+        </section>
+
+        
+        <section>
+            <h2 style="color: black;">Café Coffee Day (CCD)</h2>
+            <img src="images/coffee day.png" height="400px" width="400px" alt="Café Coffee Day at LPU">
+            <p>Café Coffee Day (CCD) is a popular hangout spot at LPU, known for its wide range of beverages and snacks. Students flock to CCD to unwind, study, or chat with friends in a cozy atmosphere.</p>
+            
+        </section>
+
+        
+        <section>
+            <h2 style="color: black;">Canadian Pizza</h2>
+            <img src="images/canadian pizza.jpeg" height="400px" width="400px" alt="Canadian Pizza at LPU">
+            <p>Canadian Pizza at LPU offers a range of delicious pizzas, perfect for a casual meal between classes or for gathering with friends. Enjoy a tasty treat in a relaxed setting.</p>
+            
+        </section>
+    </div>
+</body>
+
+</html>

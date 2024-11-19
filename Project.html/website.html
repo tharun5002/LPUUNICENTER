@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNI-CENTER</title>
+    <style>
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                              url("https://www.admissionforms.net/wp-content/uploads/2023/01/lovely-professional-university-lpu-jalandhar-images-photos-768x768.jpg");
+            background-size: cover;
+            background-position: center;
+            color: white;
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7);
+            animation: fadeIn 2s ease-out;
+        }
+
+       
+        p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            margin: 10px auto;
+            width: 80%;
+            max-width: 800px;
+            text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+            animation: fadeIn 3s ease-out;
+        }
+
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        
+        #buttons {
+            margin-top: 40px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+        }
+
+       
+        .button {
+            background-color: #FF6347;
+            border: none;
+            border-radius: 35px;
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            color: white;
+            cursor: pointer;
+            text-transform: uppercase;
+            font-weight: bold;
+            letter-spacing: 1.2px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+            transition: transform 0.2s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #FF4500;
+            transform: translateY(-5px);
+            box-shadow: 0 15px 25px rgba(0, 0, 0, 0.4);
+        }
+
+       
+        .button a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        
+        #display {
+            margin-top: 30px;
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #FFD700;
+            animation: fadeIn 4s ease-out;
+        }
+
+       
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+
+            .button {
+                font-size: 1rem;
+                padding: 12px 25px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Welcome to UNI-CENTER</h1>
+
+    <p>Welcome to the UniCenter at Lovely Professional University! The UniCenter is a vibrant hub of activity with multiple services available across six floors.</p>
+    <p>Find everything you need, from bookstalls and hair salons to laptop shops and clothing stores. Explore, shop, and enjoy your student life at LPU.</p>
+    <p>Each floor offers something special to enhance your university experience. Navigate through the floors to discover new opportunities!</p>
+
+    
+    <div id="buttons">
+        <button class="button" onclick="goToFloor(1)">
+            <a href="Floor1.html">Floor 1</a>
+        </button>
+        <button class="button" onclick="goToFloor(2)">
+            <a href="Floor2.html">Floor 2</a>
+        </button>
+        <button class="button" onclick="goToFloor(3)">
+            <a href="Floor3.html">Floor 3</a>
+        </button>
+        <button class="button" onclick="goToFloor(4)">
+            <a href="Floor4.html">Floor 4</a>
+        </button>
+        <button class="button" onclick="goToFloor(5)">
+            <a href="Floor5.html">Floor 5</a>
+        </button>
+        <button class="button" onclick="goToFloor(6)">
+            <a href="Floor6.html">Floor 6</a>
+        </button>
+    </div>
+
+    
+    <p id="display"></p>
+
+    <script>
+        function goToFloor(floor) {
+            document.getElementById('display').innerText = 'Going to Floor ' + floor;
+        }
+    </script>
+
+</body>
+
+</html>
+
